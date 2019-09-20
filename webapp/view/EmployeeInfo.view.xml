@@ -1,0 +1,23 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	controllerName="PracticeArea.PracticeArea.controller.EmployeeInfo" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Employee">
+				<VBox class="sapUiSmallMargin">
+					<f:SimpleForm id="employee" editable="false" layout="ColumnLayout" title="Employee Data">
+						<f:content>
+							<Label text="Employee ID"/>
+							<Text id="IDText" text="{employee>/employeeID}"/>
+							<Label text="First Name"/>
+							<Text id="fNameText" text="{employee>/firstName}"/>
+							<Label text="Last Name"/>
+							<Text id="lNameText" text="{employee>/lastName}"/>
+							<Label text="Title"/>
+							<Text text="{employee>/title}"/>
+						</f:content>
+					</f:SimpleForm>
+				</VBox>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
